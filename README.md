@@ -26,7 +26,7 @@ async def main() -> None:
 
     await db.read()
 
-    db.data = db.data or {}
+    db.data = db.data or {"posts": []}
 
     db.data["posts"].append({
         "id": 1,
