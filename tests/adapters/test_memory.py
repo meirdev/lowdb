@@ -14,7 +14,7 @@ class ObjType(TypedDict):
 async def test_memory():
     mem = Memory[ObjType]()
 
-    assert await mem.read() == None
+    assert await mem.read() is None
 
     obj: ObjType = {
         "a": 123,

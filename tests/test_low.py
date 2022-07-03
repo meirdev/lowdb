@@ -15,7 +15,7 @@ class ObjType(TypedDict):
 async def test_low():
     low = Low[ObjType](Memory())
 
-    assert low.data == None
+    assert low.data is None
 
     obj: ObjType = {
         "a": 123,
