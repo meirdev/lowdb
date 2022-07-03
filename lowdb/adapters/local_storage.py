@@ -3,7 +3,7 @@ from typing import Optional
 
 from js import localStorage
 
-from ..low import Adapter, T
+from ..low_sync import Adapter, T
 
 
 class LocalStorage(Adapter[T]):
